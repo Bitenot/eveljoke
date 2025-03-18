@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #DBDBDB;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.arsenal-title {
+    margin-top: 40px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.arrow {
+    margin: 0 10px;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgba(65, 65, 65, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 22px;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+}
+
+.center {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Добавляем плавную прокрутку */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Стилизация скроллбара для WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(65, 65, 65, 0.3); /* Трек полосы прокрутки */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DBDBDB; /* Цвет ползунка */
+    border-radius: 10px;
+    border: 3px solid rgba(65, 65, 65, 0.3); /* Отступ внутри трека */
+}
+
+/* Для Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #DBDBDB rgba(65, 65, 65, 0.3);
+}
