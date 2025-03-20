@@ -3,91 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Хоменовская война</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #DBDBDB;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .arsenal-title {
-            margin-top: 40px;
-        }
-
-        .time {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-            font-size: 22px;
-        }
-
-        .arrow {
-            margin: 0 10px;
-        }
-
-        .grid {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .box {
-            background-color: rgba(65, 65, 65, 0.3);
-            border-radius: 10px;
-            padding: 20px;
-            flex: 1 1 300px;
-            box-sizing: border-box;
-        }
-
-        .box ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 22px;
-        }
-
-        .box ul li {
-            margin-bottom: 10px;
-        }
-
-        .center {
-            font-size: 22px;
-            text-align: center;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Хоменовская война</h1>
-
-        <div class="time">
+        <h1 class="fade-in">Хоменовская война</h1>
+        <div class="date-range fade-in">
             <span>19.03.2025 13:00</span>
-            <span class="arrow">→</span>
+            <span>➡</span>
             <span>19.03.2025 13:45</span>
         </div>
 
         <div class="grid">
-            <div class="box">
+            <div class="card fade-up">
                 <h2>Хоменовский рейх</h2>
                 <ul>
                     <li>- многочисленный арсенал</li>
@@ -95,11 +23,18 @@
                 </ul>
             </div>
 
-            <div class="box">
-                <h2>События</h2>
+            <div class="card fade-up">
+                <h2>Исход</h2>
+                <p>- поражение 9-Г</p>
+                <h3>Статусы</h3>
+                <ul>
+                    <li>! Лошара: <span id="loshara">Ты</span></li>
+                    <li>! Философ: <span id="philosopher">Thermobyte</span></li>
+                    <li>!Фюрер: Хоменко</li>
+                </ul>
             </div>
 
-            <div class="box">
+            <div class="card fade-up">
                 <h2>9-Г класс</h2>
                 <ul>
                     <li>- 30 человек</li>
@@ -108,48 +43,76 @@
             </div>
         </div>
 
-        <h2 class="arsenal-title">Арсенал</h2>
+        <h2 class="fade-in">Арсенал</h2>
         <div class="grid">
-            <div class="box">
+            <div class="card fade-up">
                 <ul>
                     <li>- "СПИСАНО: 2!"</li>
                     <li>- "Можешь дальше не писать, работу я не приму"</li>
                     <li>- *3 Закона Ньютона*</li>
-                    <li>- Гнев Предков (Обращение к деду Гитлеру)</li>
+                    <li>- Гнев Предков</li>
                     <li>- Дефолтные фразы учителей</li>
-                    <li>- Воля к свободе (Перемещение по классу)</li>
+                    <li>- Воля к свободе</li>
                     <li>- 3 глаз</li>
                 </ul>
             </div>
-            <div class="box">
+
+            <div class="card fade-up">
                 <ul>
-                    <li>- Повествование константами (лишение прав и объектов внутри класса)</li>
-                    <li>- Временная константа (ограничение времени на К.Р путем заливания говна в начале урока)</li>
-                    <li>- Возмездие (пристальное слежение за некоторыми индивидами)</li>
-                    <li>- Администраторство (полная власть на уроке)</li>
-                    <li>- Снисхождение абсолюта (обращение к высшим силам)</li>
+                    <li>- Повелевание константами</li>
+                    <li>- Временная константа</li>
+                    <li>- Возмездие</li>
+                    <li>- Администраторство</li>
+                    <li>- Снисхождение абсолюта</li>
                 </ul>
             </div>
         </div>
 
-        <h2>Дебаффы</h2>
-        <div class="box">
+        <h2 class="fade-in">Дебаффы</h2>
+        <div class="card fade-up">
             <ul>
                 <li>- Статья 33 Конституции Украины</li>
                 <li>- Статья 34 Конституции Украины</li>
                 <li>- Статья 41 Конституции Украины</li>
-                <li>- Обязанности учителя статья 56</li>
                 <li>- Права человека</li>
             </ul>
         </div>
 
-        <h2>Points</h2>
-        <div class="box">
+        <h2 class="fade-in">Points</h2>
+        <div class="card fade-up">
             <ul>
                 <li>- Хоменовский рейх - 3500</li>
                 <li>- 9-Г класс - -1000</li>
             </ul>
         </div>
+
+        <div class="progress-container fade-up">
+            <div class="progress-bar">H-Reich 100%</div>
+            <div class="progress-bar empty">9-Г 0%</div>
+        </div>
+
+        <h2 class="fade-in">Создатели</h2>
+        <div class="creators">
+            <div class="creator fade-up">
+                <img src="./eveline.png" alt="Eveline">
+                <p class="role">Разработчик</p>
+                <p class="name">Eveline</p>
+            </div>
+            <div class="creator fade-up">
+                <img src="./thermobyte.png" alt="Thermobyte">
+                <p class="role">Дизайнер</p>
+                <p class="name">Thermobyte</p>
+            </div>
+            <div class="creator fade-up">
+                <img src="./nikita.png" alt="Nikita">
+                <p class="role">Криптан</p>
+                <p class="name">Nikita</p>
+            </div>
+        </div>
+
+        <button class="faq-button fade-in" onclick="window.location.href='https://t.me/Thermobyte'">FAQ</button>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
